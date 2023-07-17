@@ -1,43 +1,21 @@
 import * as React from "react";
-
-// import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from "../components/Layout";
 import Hero from "../components/organisms/Hero";
-import { graphql } from "gatsby";
+import Services from "../components/organisms/Services";
+import { useSlidesQuery } from "../hooks/useSlidesQuery";
+import { useServicesQuery } from "../hooks/useServicesQuery";
 import ".././styles/index.scss";
 
-export default function Home({ data }) {
-  console.log("data: ", data);
+export default function Home() {
+  const slidesData = useSlidesQuery();
+  const servicesData = useServicesQuery();
+
+  console.log("servicesData: ", servicesData);
 
   return (
     <Layout>
-      <Hero data={Object.values(data)} />
+      <Hero data={slidesData} />
+      <Services data={servicesData} />
     </Layout>
   );
 }
-
-export const query = graphql`
-  query Slide {
-    slide1: file(relativePath: { eq: "slide1.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    slide2: file(relativePath: { eq: "slide2.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    slide3: file(relativePath: { eq: "slide3.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;

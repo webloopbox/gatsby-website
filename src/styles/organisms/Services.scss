@@ -1,0 +1,145 @@
+.services-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 495px 363px;
+  grid-gap: 30px;
+  margin-top: 140px;
+
+  & .gatsby-image-wrapper {
+    height: 100%;
+  }
+}
+
+.service-1 {
+  display: block;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.service-2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.service-3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.service-4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.service {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  & img {
+    transition: 0.2s !important;
+  }
+  & .enter-arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    width: 130px;
+    height: 130px;
+    background-color: $dark1;
+    z-index: 15;
+    & svg {
+      position: relative;
+      height: 25px;
+      z-index: 2;
+    }
+    & svg path {
+      stroke: white;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      background-color: white;
+      width: 0;
+      height: 100%;
+      transition: 0.4s;
+      opacity: 0;
+      z-index: 1;
+    }
+  }
+  & .service-content {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+  }
+  & .service-description {
+    background-color: white;
+    padding: 35px 25px 10px 35px;
+    min-width: 223px;
+    min-height: 159px;
+  }
+  & .divider {
+    display: block;
+    margin-top: 26px;
+    width: 49px;
+    height: 5px;
+    background-color: $dark1;
+  }
+  & h2 {
+    @include text-h2;
+    position: relative;
+    z-index: 10;
+    & span {
+      position: relative;
+      z-index: 2;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: -10px;
+      width: 42px;
+      height: 42px;
+      background-color: $yellow;
+      z-index: 1;
+    }
+  }
+  & p {
+    margin-top: 10px;
+    color: $dark1;
+  }
+}
+
+.service-1 .service-content {
+  top: 29px;
+  left: 29px;
+}
+.service-2 .service-content {
+  top: 29px;
+  left: 29px;
+}
+.service-3 .service-content {
+  bottom: 29px;
+  left: 29px;
+}
+.service-4 .service-content {
+  bottom: 29px;
+  left: 29px;
+}
+
+.service:hover img {
+  transform: scale(1.2);
+}
+
+.service:hover {
+  & .enter-arrow {
+    & svg path {
+      stroke: $dark1;
+    }
+    &::before {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}

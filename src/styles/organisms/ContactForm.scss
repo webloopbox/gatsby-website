@@ -27,15 +27,13 @@
     min-height: 52px;
   }
   & h2 {
-    font-weight: 700;
-    font-size: 28px;
+    @include text-h2;
   }
   & p {
     font-size: 18px;
   }
   & h3 {
-    font-size: 18px;
-    font-weight: 700;
+    @include text-h3;
   }
   & label {
     font-size: 10px;
@@ -44,7 +42,7 @@
 
 .form-check {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   column-gap: 10px;
   & label {
     color: $dark2;

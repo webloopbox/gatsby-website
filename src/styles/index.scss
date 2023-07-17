@@ -10,7 +10,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: black;
   font-family: "Poppins", sans-serif;
 }
 
@@ -31,6 +30,7 @@ button:active {
 @import "./organisms/ContactForm";
 @import "./organisms/NavigationBar";
 @import "./organisms/Hero";
+@import "./organisms/Services";
 
 // media queries
 @import "media";

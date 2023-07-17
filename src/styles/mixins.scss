@@ -13,3 +13,15 @@
     background-color: $bg-color !important;
   }
 }
+
+@mixin text-h2 {
+  color: $dark1;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+@mixin text-h3 {
+  color: $dark1;
+  font-size: 18px;
+  font-weight: 700;
+}

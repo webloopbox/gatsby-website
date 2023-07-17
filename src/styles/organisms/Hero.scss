@@ -42,7 +42,7 @@
       top: 0;
       right: 0;
       display: block;
-      background-color: $dark;
+      background-color: $dark1;
       width: 0;
       height: 100%;
       transition: 0.4s;
@@ -55,7 +55,7 @@
       top: 0;
       left: 0;
       display: block;
-      background-color: $dark;
+      background-color: $dark1;
       width: 0;
       height: 100%;
       transition: 0.4s;
@@ -104,7 +104,7 @@
 .slider-text {
   position: absolute;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   left: 0;
   top: 0;
   width: 100%;
