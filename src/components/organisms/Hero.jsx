@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from "react";
 import { Button, Container } from "react-bootstrap";
-import LeftArrow from "../../../assets/arrow-left.svg";
-import RightArrow from "../../../assets/arrow-right.svg";
+import LeftArrow from "../../assets/arrow-left.svg";
+import RightArrow from "../../assets/arrow-right.svg";
 import Img from "gatsby-image";
-import overlay from "../../../assets/slider-overlay.png";
+import overlay from "../../assets/slider-overlay.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -18,7 +18,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import ContactForm from "../ContactForm";
+import ContactForm from "./ContactForm";
 
 const Hero = ({ data }) => {
   const [swiperRef, setSwiperRef] = useState();

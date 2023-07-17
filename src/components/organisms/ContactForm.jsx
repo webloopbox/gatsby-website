@@ -5,7 +5,7 @@ import CloseButton from "../atoms/buttons/CloseButton";
 const ContactForm = ({ handleContactModal }) => {
   return (
     <div className="contact-form">
-      <div className="hero-contact-wrapper m-0 mx-auto p-0">
+      <div className="contact-form-wrapper m-0 mx-auto p-0">
         <CloseButton handler={handleContactModal} />
         <h2 className="m-0">Lorem ipsum</h2>
         <h2 className="m-0">Lorem ipsum lorem ipsum</h2>
