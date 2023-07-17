@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+@import "./_bootstrap-variables";
+@import "~bootstrap/scss/bootstrap";
+
+@import "./theme-colors";
+@import "./mixins";
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+}
+
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+// atoms styles
+@import "./atoms/CloseButton";
+
+// organisms styles
+@import "./organisms/ContactForm";
+@import "./organisms/NavigationBar";
+@import "./organisms/Hero";
+
+// media queries
+@import "media";

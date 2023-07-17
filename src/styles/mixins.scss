@@ -1,0 +1,15 @@
+@mixin button-styles($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  border-radius: 0;
+  border: none;
+
+  &:hover {
+    background-color: $bg-color;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $bg-color !important;
+  }
+}
