@@ -1,0 +1,32 @@
+.posts-wrapper {
+  margin-bottom: 139px;
+  & h1 {
+    @include text-h1;
+    margin-bottom: 119px;
+  }
+  & .posts {
+    column-gap: 110px;
+  }
+}
+
+.single-post {
+  & .gatsby-image-wrapper {
+    min-height: 334px;
+  }
+  & .post-date {
+    color: $dark1;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 75px;
+  }
+  & .post-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+  & a {
+    color: $dark1;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}

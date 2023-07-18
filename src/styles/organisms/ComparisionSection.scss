@@ -1,0 +1,48 @@
+.comparision-wrapper {
+  margin-top: 212px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 200px;
+  & .divider-wrapper {
+    position: absolute;
+    width: 100%;
+    max-width: 1568px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 16;
+    bottom: 80px;
+    & .divider {
+      display: block;
+      background-color: $dark1;
+      width: 610px;
+      height: 20px;
+    }
+  }
+  &-image {
+    height: 100%;
+    width: 100%;
+    max-width: 1568px;
+    z-index: 10;
+  }
+  &-content {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    z-index: 12;
+    max-width: 1568px;
+    transform: translateX(-50%);
+    & h4 {
+      font-weight: 700;
+      font-size: 3.2vw;
+    }
+  }
+  & .strokes-shape {
+    position: absolute;
+    top: -72px;
+    right: 175px;
+    z-index: 15;
+  }
+}
