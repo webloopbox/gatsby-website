@@ -16,7 +16,7 @@ const PostSection = () => {
   return (
     <Container className="g-0 posts-wrapper">
       <h1 className="text-center">Aktualności</h1>
-      <div className="d-flex posts">
+      <div className="posts">
         <div className="single-post">
           <Img
             alt="Your image"

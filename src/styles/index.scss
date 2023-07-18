@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+// preset bootstrap container max-width for specific breakpoints
 @import "./_bootstrap-variables";
+
+// bootstrap core styles
 @import "~bootstrap/scss/bootstrap";
 
 @import "./theme-colors";
@@ -15,6 +18,14 @@ body {
 
 .container {
   width: 90%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 button:focus,
@@ -32,8 +43,8 @@ button:active {
 @import "./organisms/Hero";
 @import "./organisms/Services";
 @import "./organisms/Benefits";
-@import "./organisms/ComparisionSection";
+@import "./organisms/ImageSection";
 @import "./organisms/PostSection";
 
-// media queries
-@import "media";
+// media queries for larger screens
+@import "./media";

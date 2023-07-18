@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import Hero from "../components/organisms/Hero";
 import Services from "../components/organisms/Services";
 import Benefits from "../components/organisms/Benefits";
-import Comparison from "../components/organisms/Comparison";
+import ImageSection from "../components/organisms/ImageSection";
 import PostSection from "../components/organisms/PostSection";
 import { useSlidesQuery } from "../hooks/useSlidesQuery";
 import { useComparisionQuery } from "../hooks/useComparisionQuery";
@@ -13,14 +13,14 @@ import ".././styles/index.scss";
 export default function Home() {
   const slidesData = useSlidesQuery();
   const servicesData = useServicesQuery();
-  const comparisionData = useComparisionQuery();
+  const imageSectionData = useComparisionQuery();
 
   return (
     <Layout>
       <Hero data={slidesData} />
       <Services data={servicesData} />
       <Benefits />
-      <Comparison data={comparisionData} />
+      <ImageSection data={imageSectionData} />
       <PostSection />
     </Layout>
   );

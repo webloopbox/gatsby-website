@@ -3,14 +3,14 @@ import Img from "gatsby-image";
 import { Container } from "react-bootstrap";
 import StrokesShape from "../../assets/strokes1.svg";
 
-const Comparison = ({ data }) => {
+const ImageSection = ({ data }) => {
   return (
-    <div className="comparision-wrapper">
+    <div className="img-section-wrapper">
       <StrokesShape className="strokes-shape" />
-      <div className="comparision-wrapper-image">
+      <div className="img-section-wrapper-bg">
         <Img fluid={data.image1.childImageSharp.fluid} objectFit="cover" />
       </div>
-      <Container className="g-0 comparision-wrapper-content">
+      <Container className="g-0 img-section-wrapper-content">
         <h4>
           Lorem ipsum <br />
           vs własne biuro
@@ -23,4 +23,4 @@ const Comparison = ({ data }) => {
   );
 };
 
-export default Comparison;
+export default ImageSection;

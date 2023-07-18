@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Button, Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import CloseButton from "../atoms/buttons/CloseButton";
 
 const ContactForm = ({ handleContactModal }) => {

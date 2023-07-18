@@ -1,4 +1,4 @@
-.comparision-wrapper {
+.img-section-wrapper {
   margin-top: 212px;
   position: relative;
   z-index: 10;
@@ -13,36 +13,41 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 16;
-    bottom: 80px;
+    bottom: 30px;
     & .divider {
       display: block;
       background-color: $dark1;
-      width: 610px;
+      width: 30%;
       height: 20px;
     }
   }
-  &-image {
+  &-bg {
     height: 100%;
     width: 100%;
     max-width: 1568px;
     z-index: 10;
+    & > .gatsby-image-wrapper {
+      min-height: 350px;
+    }
   }
   &-content {
     position: absolute;
     left: 50%;
-    width: 100%;
+    width: 90%;
     z-index: 12;
     max-width: 1568px;
     transform: translateX(-50%);
     & h4 {
       font-weight: 700;
-      font-size: 3.2vw;
+      font-size: 6.5vw;
     }
   }
   & .strokes-shape {
     position: absolute;
-    top: -72px;
-    right: 175px;
+    top: -25px;
+    right: 25px;
     z-index: 15;
+    height: 50px;
+    width: auto;
   }
 }

@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import Img from "gatsby-image";
 import { Link } from "gatsby";
 import RightArrow from "../../assets/arrow-right.svg";
+import overlay from "../../assets/slider-overlay.png";
 
 const Services = ({
   data: { serviceImg1, serviceImg2, serviceImg3, serviceImg4 },
@@ -11,6 +12,7 @@ const Services = ({
     <Container className="g-0 services-wrapper">
       <Link to="/#" className="service service-1">
         <Img fluid={serviceImg1.childImageSharp.fluid} objectFit="cover" />
+        <img src={overlay} className="overlay" />
         <div className="service-content">
           <div className="service-description">
             <h2>
@@ -27,6 +29,7 @@ const Services = ({
 
       <Link to="/#" className="service service-2">
         <Img fluid={serviceImg2.childImageSharp.fluid} objectFit="cover" />
+        <img src={overlay} className="overlay" />
         <div className="service-content">
           <div className="service-description">
             <h2>
@@ -47,6 +50,7 @@ const Services = ({
 
       <Link to="/#" className="service service-3">
         <Img fluid={serviceImg3.childImageSharp.fluid} objectFit="cover" />
+        <img src={overlay} className="overlay" />
         <div className="service-content">
           <div className="service-description">
             <h2>
@@ -67,6 +71,7 @@ const Services = ({
 
       <Link to="/#" className="service service-4">
         <Img fluid={serviceImg4.childImageSharp.fluid} objectFit="cover" />
+        <img src={overlay} className="overlay" />
         <div className="service-content">
           <div className="service-description">
             <h2>

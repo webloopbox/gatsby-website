@@ -11,67 +11,71 @@ import RightArrow from "../../assets/arrow-right.svg";
 
 const Benefits = () => {
   return (
-    <Container className="g-0 benefits-wrapper">
-      <div>
-        <span className="m-0">
-          Lorem <br />
-          ipsum
-          <br /> dolor sit <br />
-          amet, <br />
-          conse
-        </span>
-        <span className="divider"></span>
+    <Container className="g-0">
+      <div className="benefits-wrapper">
+        <div className="benefit">
+          <div>
+            <span className="m-0">
+              Lorem <br />
+              ipsum
+              <br /> dolor sit <br />
+              amet, <br />
+              conse
+            </span>
+            <span className="divider"></span>
+          </div>
+        </div>
+        <div className="benefit">
+          <WalletIcon />
+          <span>Lorem ipsum</span>
+        </div>
+        <div className="benefit">
+          <CoffeeIcon />
+          <span>
+            Lorem ipsum <br />
+            dolor sit amet conse
+          </span>
+        </div>
+        <div className="benefit">
+          <FurnitureIcon />
+          <span>
+            Lorem ipsum <br />
+            dolor sit amet,
+          </span>
+        </div>
+        <div className="benefit">
+          <PersonIcon />
+          <span>
+            Lorem ipsum <br />
+            dolor sit amet,
+          </span>
+        </div>
+        <div className="benefit">
+          <TableIcon />
+          <span>
+            Lorem ipsum dolor
+            <br /> sit amet, conse
+            <br /> lorem ipsum lorem
+          </span>
+        </div>
+        <div className="benefit">
+          <BoxIcon />
+          <span>
+            Lorem ipsum dolor <br />
+            sit amet, conse <br />
+            lorem ipsum lorem
+          </span>
+        </div>
+        <div className="benefit">
+          <PeopleIcon />
+          <span>
+            Lorem ipsum dolor
+            <br /> sit amet, conse
+            <br /> lorem ipsum
+          </span>
+        </div>
       </div>
-      <div>
-        <WalletIcon />
-        <span>Lorem ipsum</span>
-      </div>
-      <div>
-        <CoffeeIcon />
-        <span>
-          Lorem ipsum <br />
-          dolor sit amet conse
-        </span>
-      </div>
-      <div>
-        <FurnitureIcon />
-        <span>
-          Lorem ipsum <br />
-          dolor sit amet,
-        </span>
-      </div>
-      <div>
-        <PersonIcon />
-        <span>
-          Lorem ipsum <br />
-          dolor sit amet,
-        </span>
-      </div>
-      <div>
-        <TableIcon />
-        <span>
-          Lorem ipsum dolor
-          <br /> sit amet, conse
-          <br /> lorem ipsum lorem
-        </span>
-      </div>
-      <div>
-        <BoxIcon />
-        <span>
-          Lorem ipsum dolor <br />
-          sit amet, conse <br />
-          lorem ipsum lorem
-        </span>
-      </div>
-      <div>
-        <PeopleIcon />
-        <span>
-          Lorem ipsum dolor
-          <br /> sit amet, conse
-          <br /> lorem ipsum
-        </span>
-      </div>
-      <Button className="py-0">
+      <Button className="py-0 learn-more">
         <span className="m-0">Dowiedz się więcej</span>
         <span className="m-0">
           <RightArrow />

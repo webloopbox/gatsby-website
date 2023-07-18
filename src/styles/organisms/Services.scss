@@ -1,8 +1,8 @@
 .services-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 495px 363px;
-  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 363px);
+  row-gap: 30px;
   margin-top: 140px;
 
   & .gatsby-image-wrapper {
@@ -11,21 +11,20 @@
 }
 
 .service-1 {
-  display: block;
   grid-column: 1/2;
   grid-row: 1/2;
 }
 .service-2 {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-.service-3 {
   grid-column: 1/2;
   grid-row: 2/3;
 }
+.service-3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
 .service-4 {
-  grid-column: 2/3;
-  grid-row: 2/3;
+  grid-column: 1/2;
+  grid-row: 4/5;
 }
 
 .service {
@@ -42,8 +41,8 @@
     justify-content: center;
     right: 0;
     bottom: 0;
-    width: 130px;
-    height: 130px;
+    width: 60px;
+    height: 60px;
     background-color: $dark1;
     z-index: 15;
     & svg {
@@ -75,9 +74,8 @@
   }
   & .service-description {
     background-color: white;
-    padding: 35px 25px 10px 35px;
-    min-width: 223px;
-    min-height: 159px;
+    padding: 25px 25px 10px 25px;
+    min-width: 180px;
   }
   & .divider {
     display: block;
@@ -110,22 +108,12 @@
     color: $dark1;
   }
 }
-
-.service-1 .service-content {
-  top: 29px;
-  left: 29px;
-}
-.service-2 .service-content {
-  top: 29px;
-  left: 29px;
-}
-.service-3 .service-content {
-  bottom: 29px;
-  left: 29px;
-}
+.service-1 .service-content,
+.service-2 .service-content,
+.service-3 .service-content,
 .service-4 .service-content {
-  bottom: 29px;
-  left: 29px;
+  top: 15px;
+  left: 15px;
 }
 
 .service:hover img {
