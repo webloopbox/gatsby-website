@@ -1,0 +1,36 @@
+.footer-wrapper {
+  background-color: $dark1;
+  color: white;
+  font-size: 12px;
+  position: relative;
+  &-inner {
+    padding: 60px 0 15px 0;
+  }
+  & ul {
+    margin-top: 40px;
+  }
+  & ul:last-of-type {
+    margin-top: 0;
+  }
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+  & .shapes-icon {
+    position: absolute;
+    top: -17px;
+    left: 10px;
+    height: 40px;
+    width: auto;
+  }
+}
+
+.site-author {
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.privacy-policy {
+  font-size: 10px;
+  margin-top: 20px;
+}

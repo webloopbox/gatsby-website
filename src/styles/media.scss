@@ -121,6 +121,41 @@
       width: auto;
     }
   }
+  .footer-wrapper {
+    background-color: $dark1;
+    color: white;
+    font-size: 12px;
+    position: relative;
+    &-inner {
+      padding: 60px 0 15px 0;
+    }
+    & ul {
+      margin-top: 40px;
+    }
+    & ul:last-of-type {
+      margin-top: 40px;
+    }
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+    & .shapes-icon {
+      position: absolute;
+      top: -17px;
+      left: 10px;
+      height: 40px;
+      width: auto;
+    }
+  }
+
+  .site-author {
+    font-size: 10px;
+  }
+
+  .privacy-policy {
+    font-size: 10px;
+    margin-top: 40px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -453,10 +488,10 @@
   .navbar {
     background-color: transparent;
     padding: 45px 0;
-    &-brand {
-      font-size: 48px;
-    }
     transition: padding 0.2s;
+  }
+  .navbar-brand {
+    font-size: 48px;
   }
   // .container {
   //   width: 90%;
@@ -695,5 +730,37 @@
       font-size: 18px;
       margin-top: 20px;
     }
+  }
+  .footer-wrapper {
+    font-size: 16px;
+    position: relative;
+    &-inner {
+      padding: 80px 0 45px 0;
+    }
+    & ul {
+      margin-top: 90px;
+    }
+    & ul:last-of-type {
+      margin-top: 90px;
+    }
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+    & .shapes-icon {
+      top: -30px;
+      left: auto;
+      right: 175px;
+      height: 68px;
+    }
+  }
+
+  .site-author {
+    font-size: 12px;
+  }
+
+  .privacy-policy {
+    font-size: 12px;
+    margin-top: 145px;
   }
 }
