@@ -31,20 +31,24 @@
 }
 .learn-more {
   @include button-styles($dark1, white);
-  min-height: 78px;
   position: relative;
   display: flex;
   align-items: center;
   font-weight: 700;
   letter-spacing: 3.6px;
+  min-height: 60px;
   justify-content: space-between;
   font-size: 12px;
-  padding: 0 0 0 15px;
+
   margin-top: 120px;
   z-index: 10;
 
+  & span {
+    padding: 0 15px;
+  }
+
   & span:last-of-type {
-    width: 78px;
+    width: 60px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -69,7 +73,7 @@
     z-index: -1;
   }
   &:hover::before {
-    width: calc(100% - 78px);
+    width: calc(100% - 60px);
   }
   &:hover {
     color: $dark1;

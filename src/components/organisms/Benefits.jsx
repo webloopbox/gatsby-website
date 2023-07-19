@@ -75,9 +75,9 @@ const Benefits = () => {
           </span>
         </div>
       </div>
-      <Button className="py-0 learn-more">
-        <span className="m-0">Dowiedz się więcej</span>
-        <span className="m-0">
+      <Button className="p-0 learn-more">
+        <span>Dowiedz się więcej</span>
+        <span>
           <RightArrow />
         </span>
       </Button>

@@ -3,13 +3,7 @@ import { Button, Container } from "react-bootstrap";
 import Img from "gatsby-image";
 import overlay from "../../assets/slider-overlay.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  EffectFade,
-} from "swiper/modules";
+import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -40,8 +34,11 @@ const Hero = ({ data }) => {
   return (
     <Container fluid className="p-0 hero-container">
       <Swiper
+        autoplay={{
+          delay: 2500,
+        }}
         onSwiper={setSwiperRef}
-        modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
+        modules={[Navigation, Autoplay, EffectFade]}
         loop={true}
         effect="fade"
         slidesPerView={1}
