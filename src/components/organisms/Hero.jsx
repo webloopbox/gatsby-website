@@ -1,7 +1,5 @@
 import React, { useCallback, useState } from "react";
 import { Button, Container } from "react-bootstrap";
-import LeftArrow from "../../assets/arrow-left.svg";
-import RightArrow from "../../assets/arrow-right.svg";
 import Img from "gatsby-image";
 import overlay from "../../assets/slider-overlay.png";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,6 +17,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import ContactForm from "./ContactForm";
+import PaginationButton from "../atoms/buttons/PaginationButton";
 
 const Hero = ({ data }) => {
   const [swiperRef, setSwiperRef] = useState();
@@ -81,18 +80,16 @@ const Hero = ({ data }) => {
         <ContactForm handleContactModal={handleContactModal} />
       </Container>
       <div className="arrows">
-        <Button
-          className="p-0 rounded-0 btn-outline-light"
-          onClick={() => changeSlideHandler(-1)}
-        >
-          <LeftArrow />
-        </Button>
-        <Button
-          className="p-0 rounded-0 btn-outline-light"
-          onClick={() => changeSlideHandler(1)}
-        >
-          <RightArrow />
-        </Button>
+        <PaginationButton
+          type={"prev"}
+          handler={changeSlideHandler}
+          value={-1}
+        />
+        <PaginationButton
+          type={"next"}
+          handler={changeSlideHandler}
+          value={1}
+        />
       </div>
     </Container>
   );

@@ -8,6 +8,7 @@ import PostSection from "../components/organisms/PostSection";
 import { useSlidesQuery } from "../hooks/useSlidesQuery";
 import { useComparisionQuery } from "../hooks/useComparisionQuery";
 import { useServicesQuery } from "../hooks/useServicesQuery";
+import { useGalleryQuery } from "../hooks/useGalleryQuery";
 import ".././styles/index.scss";
 import Footer from "../components/organisms/Footer";
 import GallerySection from "../components/organisms/GallerySection";
@@ -16,6 +17,7 @@ export default function Home() {
   const slidesData = useSlidesQuery();
   const servicesData = useServicesQuery();
   const imageSectionData = useComparisionQuery();
+  const galleryData = useGalleryQuery();
 
   return (
     <Layout>
@@ -24,7 +26,7 @@ export default function Home() {
       <Benefits />
       <ImageSection data={imageSectionData} />
       <PostSection />
-      <GallerySection />
+      <GallerySection data={galleryData} />
       <Footer />
     </Layout>
   );

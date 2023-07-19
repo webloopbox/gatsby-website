@@ -1,0 +1,61 @@
+.pagination-button {
+  position: relative;
+  width: 60px;
+  height: 50px;
+  background-color: white;
+  border: 0;
+  margin: 0 10px;
+  z-index: 1;
+  svg {
+    position: relative;
+    height: 20px;
+    z-index: 2;
+  }
+  &:hover {
+    background-color: white;
+    svg path {
+      stroke: white;
+    }
+  }
+  &:first-child:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: $dark1;
+    width: 0;
+    height: 100%;
+    transition: 0.4s;
+    opacity: 0;
+    z-index: 1;
+  }
+  &:last-child:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: $dark1;
+    width: 0;
+    height: 100%;
+    transition: 0.4s;
+    opacity: 0;
+    z-index: 1;
+  }
+  &:hover::before {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pagination-button {
+    margin: 0;
+    width: 145px;
+    height: 118px;
+    svg {
+      height: 33px;
+    }
+  }
+}
