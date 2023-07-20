@@ -10,7 +10,6 @@ const PostSection = ({ data }) => {
       <h1 className="text-center">Aktualności</h1>
       <div className="posts">
         {data.allWpPost.nodes.map((post, index) => {
-          console.log(post);
           const formattedDate = format(new Date(post.date), "dd.MM.yyyy");
           return (
             <div className="single-post" key={index}>

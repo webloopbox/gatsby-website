@@ -19,8 +19,6 @@ const Hero = ({ data }) => {
 
   const slides = Object.values(data);
 
-  console.log("slides: ", slides);
-
   const changeSlideHandler = useCallback(
     (direction) => {
       if (direction === 1) swiperRef?.slideNext();

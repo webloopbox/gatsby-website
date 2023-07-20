@@ -7,7 +7,6 @@ import { format } from "date-fns";
 import LeftArrow from "../assets/arrow-left.svg";
 
 const PostTemplate = ({ data }) => {
-  console.log({ data });
   return (
     <Layout>
       <Container className="post-details-wrapper">
