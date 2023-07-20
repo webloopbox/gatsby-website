@@ -46,7 +46,7 @@ const GallerySection = ({ data }) => {
           breakpoints={{ 0: { slidesPerView: 1 }, 600: { slidesPerView: 2 } }}
         >
           {images.map((item, index) => {
-            // the gallery images is mapped in a static way. to be changed after getting dynamic data from external source e.g. headless cms
+            // the images inside gallery are displayed in a static way. to be changed after getting dynamic data from an external source e.g. headless cms
             return (
               <SwiperSlide key={index}>
                 <div
