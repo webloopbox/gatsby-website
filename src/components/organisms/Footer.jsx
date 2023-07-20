@@ -59,7 +59,7 @@ const Footer = () => {
             </li>
           </ul>
 
-          <div className="d-flex align-items-end">
+          <div className="d-flex align-items-end mt-2 mt-sm-0">
             <div className="d-flex align-items-end">
               <span className="me-2 site-author">Proudly designed by</span>
               <DesignerBrandIcon />

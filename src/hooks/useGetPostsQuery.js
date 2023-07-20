@@ -14,7 +14,7 @@ export const useGetPostsQuery = () => {
             node {
               localFile {
                 childImageSharp {
-                  fluid(maxWidth: 800) {
+                  fluid(maxWidth: 450) {
                     ...GatsbyImageSharpFluid
                   }
                 }
