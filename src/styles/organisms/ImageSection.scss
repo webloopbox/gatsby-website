@@ -49,5 +49,8 @@
     z-index: 15;
     height: 50px;
     width: auto;
+    & rect {
+      fill: black;
+    }
   }
 }
