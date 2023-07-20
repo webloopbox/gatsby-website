@@ -3,8 +3,10 @@ import React, { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { GrFacebookOption, GrInstagram } from "react-icons/gr";
 
-const NavigationBar = () => {
+const NavigationBar = ({ location }) => {
   const [scrolled, setScrolled] = useState(false);
+
+  const isHomePage = location && location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,9 +24,8 @@ const NavigationBar = () => {
   return (
     <header className="site-header">
       <Navbar
-        bg={`${scrolled ? "black" : ""} `}
         expand="xl"
-        className={`${scrolled ? "scrolled" : ""}`}
+        className={`${scrolled || !isHomePage ? "shrinked" : ""}`}
       >
         <Container className="p-0">
           <div className="col-2">

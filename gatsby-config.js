@@ -17,5 +17,11 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        url: `https://dev-gatsby-wp-cms.pantheonsite.io/graphql`,
+      },
+    },
   ],
 };

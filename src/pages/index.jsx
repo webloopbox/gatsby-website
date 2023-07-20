@@ -9,25 +9,25 @@ import { useSlidesQuery } from "../hooks/useSlidesQuery";
 import { useComparisionQuery } from "../hooks/useComparisionQuery";
 import { useServicesQuery } from "../hooks/useServicesQuery";
 import { useGalleryQuery } from "../hooks/useGalleryQuery";
+import { useGetPostsQuery } from "../hooks/useGetPostsQuery";
 import ".././styles/index.scss";
-import Footer from "../components/organisms/Footer";
 import GallerySection from "../components/organisms/GallerySection";
 
-export default function Home() {
+export default function Home({ location }) {
   const slidesData = useSlidesQuery();
   const servicesData = useServicesQuery();
   const imageSectionData = useComparisionQuery();
   const galleryData = useGalleryQuery();
+  const postsData = useGetPostsQuery();
 
   return (
-    <Layout>
+    <Layout location={location}>
       <Hero data={slidesData} />
       <Services data={servicesData} />
       <Benefits />
       <ImageSection data={imageSectionData} />
-      <PostSection />
+      <PostSection data={postsData} />
       <GallerySection data={galleryData} />
-      <Footer />
     </Layout>
   );
 }

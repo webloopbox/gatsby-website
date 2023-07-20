@@ -49,5 +49,8 @@ button:active {
 @import "./organisms/GallerySection";
 @import "./organisms/Footer";
 
+// templates
+@import "./templates/PostTemplate.scss";
+
 // media queries for larger screens
 @import "./media";
