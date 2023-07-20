@@ -29,7 +29,6 @@ const PostTemplate = ({ data }) => {
             <h2 className="my-3 post-title me-3">{data.wpPost.title}</h2>
             <span>{format(new Date(data.wpPost.date), "dd.MM.yyyy")}</span>
           </div>
-
           <p
             dangerouslySetInnerHTML={{ __html: data.wpPost.content }}
             className="mt-5"

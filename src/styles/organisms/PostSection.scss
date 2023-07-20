@@ -12,6 +12,7 @@
 }
 
 .single-post {
+  flex: 1;
   & .gatsby-image-wrapper {
     min-height: 334px;
   }

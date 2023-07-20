@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/free-mode";
-import { Button } from "react-bootstrap";
 
 import Img from "gatsby-image";
 
