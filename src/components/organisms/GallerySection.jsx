@@ -28,11 +28,10 @@ const GallerySection = ({ data }) => {
   };
 
   const images = Object.values(data);
-  console.log(images);
   const imagesSourceArr = Object.values(data).map((item) => ({
     src: item.childImageSharp.fluid.src,
   }));
-  console.log(imagesSourceArr);
+
   return (
     <div className="gallery-section">
       <div className="gallery-section-title">
